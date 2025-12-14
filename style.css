@@ -43,6 +43,31 @@ p{
     margin: 40px 0;
 }
 
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.3s;
+}
+
 body {
     width: 100%;
 }
@@ -262,7 +287,7 @@ flex-wrap: wrap;
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-col:or #e8f6ea;
+    background-color: #e8f6ea;
     /* color: #088178; */
     border: 1px solid #b1e6b8;
 }
@@ -270,4 +295,83 @@ flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner h2 span{
+    color: #ce4e4e;
+}
+
+#banner .normal:hover {
+    color: #fff;
+    background-color: #088178;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
 }
